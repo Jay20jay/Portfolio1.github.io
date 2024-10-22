@@ -1,0 +1,119 @@
+
+
+  *{margin:0;
+    padding: 0;}
+    
+    body{min-height: 100vh;
+      background: #2C3E50;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background-size: cover;  
+      background-repeat: no-repeat;
+      background-position: center;
+      font-size: 20px;
+      font-family:"Nunito", sans-serif;
+    }
+
+
+
+    header {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 20px 150px 20px 180px;
+       
+      }
+      
+      #nav-title {
+        margin-right: auto;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: white;
+      }
+      
+      
+      header li {
+        list-style: none;
+        display: inline-block;
+        padding: 0 20px;
+      }
+      
+      header a {
+        text-decoration: none;
+        color: #555;
+        transition: all 0.3s ease 0s;
+        color: white;
+      }
+      
+      header a:hover {
+        color: #b2dfdb;}
+
+
+ .wrapper{
+ display:grid;
+ grid-template-columns:  repeat(2, 1fr) ;
+ grid-template-areas:
+ "nav nav nav"
+ "main main main";
+ text-align: center;
+  }
+
+
+  
+
+ 
+
+.box2{grid-area: nav;
+
+
+}
+.box3{grid-area: main;}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .wrapper{display: grid;
+        grid-template-areas:
+        "nav nav nav  "
+        "main main main";
+
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .wrapper{display:grid;
+        grid-template-areas:
+        "nav nav nav"
+        "main main main";
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .wrapper{
+        display:grid;
+        grid-template-areas:
+        "nav nav nav"
+        "main main main";
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .wrapper{
+        display:grid;
+        grid-template-areas:
+        "nav nav nav"
+        "main main main";
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .wrapper{
+     display:grid;
+     grid-template-areas:
+     "nav nav nav"
+     "main main main";
+    }
+}
